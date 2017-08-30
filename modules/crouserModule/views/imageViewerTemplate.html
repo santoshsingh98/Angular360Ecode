@@ -1,0 +1,11 @@
+<div>
+   <!-- "src":{{src.currentImg}}  -->
+   <div ng-if="src.is3dImage">
+    
+      <photosphere src="{{src.currentImg}}" width="800"></photosphere>
+   
+   </div>
+   <div ng-if="!src.is3dImage">
+      <img ng-src="{{src.currentImg}}" width="800" height="500">
+   </div>
+</div>

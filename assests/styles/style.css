@@ -1,0 +1,22 @@
+.imageSlideBox{display: -webkit-flex;
+    -webkit-flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    cursor: pointer;
+    overflow-y: hidden !important;
+    overflow: scroll;
+}
+
+.image{
+	padding: 2px;
+	width: 120px;
+}
+
+.image:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}

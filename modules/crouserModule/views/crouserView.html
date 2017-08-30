@@ -1,0 +1,16 @@
+<div ng-controller="crouserController">
+   <div ng-init="getCrouserData()">
+      <md-content data-layout="column" data-layout-margin data-layout-padding data-layout-align="center center" data-layout-fill>
+     
+     <div ng-if="crouserObj.currentImg">
+         <image-viewer src="crouserObj" ></image-viewer>
+         </div>
+      
+      </md-content>
+      <div class="imageSlideBox">
+         
+          <img class="image" ng-repeat = "img in crouserObj.imgData" ng-src="{{imageName(img.name)}}" ng-click="changeCurrentImg(img)" />
+         
+      </div>
+   </div>
+</div>
